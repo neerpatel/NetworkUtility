@@ -5,4 +5,4 @@ RUN apt-get update && apt-get install -yq iproute2 traceroute curl dnsutils netc
 COPY docker-entrypoint.sh /usr/local/bin
 RUN chmod 777 /usr/local/bin/docker-entrypoint.sh \
     && ln -s /usr/local/bin/docker-entrypoint.sh /
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
