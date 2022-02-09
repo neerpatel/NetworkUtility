@@ -3,7 +3,7 @@ A Docker container to help debug networking issues.
 ## Usage
 
 ```bash
-$ docker run --name networkutility -d -e TRACERT=google.com -e NMAP=google.com -e DIG=google.com neerpatel/dns
+$ docker run --name networkutility -d -e TRACERT=google.com -e NMAP=google.com -e DIG=google.com -e TCPDUMP  neerpatel/NetworkUtility
 
 ```
 ### Enviroment Variables
@@ -11,3 +11,4 @@ $ docker run --name networkutility -d -e TRACERT=google.com -e NMAP=google.com -
     - TRACERT : tracerout
     - NMAP    : nmap
     - DIG     : dig
+    - TCPDUMP : tcpdump 
