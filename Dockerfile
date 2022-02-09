@@ -5,7 +5,7 @@ RUN set -x && \
     addgroup --system --gid 101 netutil && \
     adduser --system --disabled-login --ingroup netutil --no-create-home --home /nonexistent --gecos "netutil user" --shell /bin/false --uid 101 netutil && \
     apt-get update && apt-get upgrade -y && \ 
-    apt-get install -yq iproute2 traceroute curl dnsutils netcat-openbsd jq nmap net-tools && \ 
+    apt-get install -yq iproute2 traceroute curl dnsutils netcat-openbsd jq nmap net-tools tcpdump && \ 
     apt-get clean &&  rm -rf /var/lib/apt/lists
 
 # make sure root login is disabled
