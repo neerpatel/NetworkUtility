@@ -31,3 +31,9 @@ if [ -n "${DIG}" ]; then
     echo "----------------------"
     dig ${DIG}
 fi
+
+if [ -n "${TCPDUMP}" ]; then
+    echo " TCPDUMP ${TCPDUMP}"
+    echo "----------------------"
+    tcpdump ${TCPDUMP}
+fi
