@@ -35,5 +35,5 @@ fi
 if [ -n "${TCPDUMP}" ]; then
     echo " TCPDUMP ${TCPDUMP}"
     echo "----------------------"
-    tcpdump ${TCPDUMP}
+    tcpdump -i eth0
 fi
